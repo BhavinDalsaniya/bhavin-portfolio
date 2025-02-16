@@ -32,7 +32,7 @@ function Portfolio() {
             <section id="hero">
                 <div className="container">
                     <div className="hero-content">
-                        <h2>Hello, I'm <span className="highlight">Dharti Dalsaniya</span></h2>
+                        <h2>Hello, I'm <span className="highlight">Bhavin Dalsaniya</span></h2>
                         <p>A passionate <strong>[Your Role]</strong> specializing in <strong>[Your Skills]</strong>.</p>
                         <div className="hero-buttons">
                             <a href="#projects" className="btn">View Portfolio</a>
