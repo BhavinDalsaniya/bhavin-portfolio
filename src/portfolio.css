@@ -59,11 +59,13 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: #9d7b2a;;
+    background: #9d7b2a;
+    ;
     color: white;
     text-align: center;
     padding: 100px 0;
-    margin-top: 60px; /* To avoid overlap with the fixed header */
+    margin-top: 60px;
+    /* To avoid overlap with the fixed header */
 }
 
 .hero-content h2 {
@@ -110,83 +112,206 @@ nav ul li a:hover {
     background: #71a19c;
 }
 
-/* About Section */
 #about {
-    padding: 60px 0;
+    background: linear-gradient(135deg, #14213d, #264653);
+    color: white;
+    padding: 80px 0;
     text-align: center;
-}
-
-#about h2 {
-    font-size: 32px;
-    color: #264653;
 }
 
 .about-content {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 18px;
-}
-
-/* Projects Section */
-#projects {
-    background: #f8f9fa;
-    padding: 60px 0;
-    text-align: center;
-}
-
-#projects h2 {
-    font-size: 32px;
-    color: #264653;
-}
-
-.project-grid {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+    border: 4px solid #f4a261;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.about-buttons {
     margin-top: 20px;
 }
 
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.project-card h3 {
-    margin: 15px 0;
-    color: #264653;
-}
-
-.project-card p {
+.about-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
     font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.about-buttons .btn:first-child {
+    background: #e76f51;
+    color: white;
+}
+
+.about-buttons .btn:first-child:hover {
+    background: white;
+    color: #e76f51;
+    border: 2px solid #e76f51;
+}
+
+.about-buttons .btn:last-child {
+    background: #2a9d8f;
+    color: white;
+}
+
+.about-buttons .btn:last-child:hover {
+    background: white;
+    color: #2a9d8f;
+    border: 2px solid #2a9d8f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-img {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Projects Section */
+#projects {
+    position: relative;
+    padding: 100px 20px;
+    background: radial-gradient(circle, #1a1a1a, #000);
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Galaxy Background Animation */
+#projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, #000 20%, #000 80%, transparent 80%, transparent),
+                radial-gradient(circle, transparent 20%, #000 20%, #000 80%, transparent 80%, transparent) 50px 50px;
+    background-size: 100px 100px;
+    animation: moveGalaxy 20s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes moveGalaxy {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Container for Centering Content */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Project Grid Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Project Card Styling */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-content {
+    text-align: center;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ddd;
 }
 
 .project-links {
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.project-links .btn {
-    display: inline-block;
-    padding: 8px 15px;
-    font-size: 16px;
-    border-radius: 5px;
+.btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
     text-decoration: none;
-    background: #e76f51;
-    color: white;
-    margin: 5px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.project-links .btn:hover {
-    background: #f4a261;
+.btn:hover {
+    background: #0056b3;
 }
+
+
+
 
 /* Contact Section */
 #contact {
@@ -194,31 +319,80 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 50px 0;
+    position: relative;
+    overflow: hidden; /* Hide the overflow so logos don't appear outside */
 }
 
+/* Add some padding to make sure the logos won't cover the content */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contact Section Header */
 #contact h2 {
     font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+#contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Contact Information */
 .contact-info ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .contact-info ul li {
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 18px;
+    position: relative;
+    z-index: 2;
 }
 
+/* Styling links */
 .contact-info ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s ease;
 }
 
 .contact-info ul li a:hover {
     color: #f4a261;
+    transform: translateX(5px);
 }
+
+/* Background Logo Animation */
+#contact::before {
+    content: '💌 💼 🐱'; /* Using emojis, replace with your desired icons */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem; /* Adjust the size of the emojis */
+    color: rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+    animation: moveBackground 20s linear infinite;
+    z-index: 1;
+}
+
+/* Animation for moving the logos */
+@keyframes moveBackground {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 /* Footer */
 footer {
