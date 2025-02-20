@@ -18,26 +18,12 @@ function Portfolio() {
                 </div>
             </header>
 
-            {/* Hero Section */}
-            <section id="hero">
-                <div className="container">
-                    <div className="hero-content">
-                        <h2>Hello, I'm <span className="highlight">Bhavin Dalsaniya</span></h2>
-                        <p>Automation Testing Expert | 3.2+ Years of Experience | Transitioning to Cloud & DevOps: Mastering AWS, Azure, GCP, Docker, Kubernetes, Ansible & Terraform | Building the Future of Scalable Solutions</p>
-                        <div className="hero-buttons">
-                            <a href="#projects" className="btn">View Portfolio</a>
-                            <a href="assets/My_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">My Resume</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* About Me Section */}
             <section id="about">
                 <div class="container">
                     <h2>About Me</h2>
                     <div class="about-content">
-                        <img src="/profile.jpg" alt="Bhavin" className="profile-img" />
+                        <img src="/profile.jpeg" alt="Bhavin" className="profile-img" />
 
                         <div class="about-text">
                             <h3>Hi, I'm Bhavin Dalsaniya 👋</h3>
@@ -75,8 +61,8 @@ function Portfolio() {
                                 <h3>Static Application Deployment</h3>
                                 <p>Deployed a static website using Nginx on an EC2 instance.</p>
                                 <div className="project-links">
-                                    <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a>
-                                    <a href="<static-app-git-url>" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+                                    {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
+                                    <a href="https://github.com/BhavinDalsaniya/static-app-aws/tree/main" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -87,8 +73,8 @@ function Portfolio() {
                                 <h3>MySQL Application Deployment</h3>
                                 <p>Deployed a dynamic application with a MySQL database on an EC2 instance.</p>
                                 <div className="project-links">
-                                    <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a>
-                                    <a href="<mysql-app-git-url>" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+                                    {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
+                                    <a href="https://github.com/BhavinDalsaniya/spring-mysql-ec2-deployment" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +85,7 @@ function Portfolio() {
                                 <h3>AWS RDS Application Deployment</h3>
                                 <p>Deployed an application connected to an AWS RDS MySQL instance.</p>
                                 <div className="project-links">
-                                    <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a>
+                                    {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
                                     <a href="<rds-app-git-url>" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
                                 </div>
                             </div>
