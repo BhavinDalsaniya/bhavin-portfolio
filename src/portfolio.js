@@ -82,11 +82,11 @@ function Portfolio() {
                         {/* Project Card 3 */}
                         <div className="project-card">
                             <div className="project-content">
-                                <h3>AWS RDS Application Deployment</h3>
-                                <p>Deployed an application connected to an AWS RDS MySQL instance.</p>
+                                <h3>DeployeDataBaseAppOnEKSOnAWS</h3>
+                                <p>Deployed an Application with a MySQL Database on AWS EKS using Docker</p>
                                 <div className="project-links">
                                     {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
-                                    <a href="<rds-app-git-url>" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+                                    <a href="https://github.com/BhavinDalsaniya/DeployeDataBaseAppOnEKSOnAWS" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
                                 </div>
                             </div>
                         </div>
