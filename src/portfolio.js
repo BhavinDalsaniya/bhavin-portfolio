@@ -82,7 +82,7 @@ function Portfolio() {
                         {/* Project Card 3 */}
                         <div className="project-card">
                             <div className="project-content">
-                                <h3>DeployeDataBaseAppOnEKSOnAWS</h3>
+                                <h3>Deploye DataBase App On EKS On AWS</h3>
                                 <p>Deployed an Application with a MySQL Database on AWS EKS using Docker</p>
                                 <div className="project-links">
                                     {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
