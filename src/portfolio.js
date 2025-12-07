@@ -4,7 +4,7 @@ import "./portfolio.css";
 function Portfolio() {
   return (
     <>
-      {/* <!-- Header Section --> */}
+      {/* Header Section */}
       <header>
         <div className="container">
           <h1>My Portfolio</h1>
@@ -26,12 +26,13 @@ function Portfolio() {
 
       {/* About Me Section */}
       <section id="about">
-        <div class="container">
+        <div className="container">
           <h2>About Me</h2>
-          <div class="about-content">
+
+          <div className="about-content">
             <img src="/profile.jpeg" alt="Bhavin" className="profile-img" />
 
-            <div class="about-text">
+            <div className="about-text">
               <h3>Hi, I'm Bhavin Dalsaniya 👋</h3>
 
               <p>
@@ -40,67 +41,50 @@ function Portfolio() {
                 automation frameworks and ensuring high-quality, stable, and
                 reliable web applications for clients across industries.
               </p>
+
               <p>
                 I have strong expertise in Selenium WebDriver with Java, Katalon
                 Studio, and Playwright with TypeScript. I build modular,
                 reusable automation frameworks using POM, fixtures, and custom
                 helpers, ensuring long-term maintainability and faster
-                execution. I am highly skilled in identifying dynamic and
-                complex web elements using XPath, CSS Selectors, and Playwright
-                locators.
+                execution.
               </p>
+
               <p>
                 I also have strong experience in API testing using Postman, Rest
                 Assured, and Playwright request context, including validation of
-                JSON payloads, response codes, and API workflows. I perform
-                Regression, Smoke, Cross-Browser, and Parallel Testing using
-                TestNG, Maven, Selenium Grid, and Playwright.
+                JSON payloads, response codes, and workflows.
               </p>
+
               <p>
-                I have integrated test automation into CI/CD pipelines using
-                Jenkins and GitHub Actions to enable continuous testing, nightly
-                runs, and faster feedback cycles. I work closely with
-                developers, QA teams, and business stakeholders in Agile sprint
-                environments to improve quality and optimize test coverage.
+                I have integrated testing into CI/CD pipelines using Jenkins and
+                GitHub Actions. I work closely with developers and stakeholders
+                in Agile sprint environments to optimize test coverage.
               </p>
+
               <p>
                 I am a quick learner, highly adaptable, and focused on
-                delivering clean, stable, and efficient automation solutions. If
-                you are looking for a detail-oriented QA engineer who can
-                improve your product quality with modern automation practices, I
-                am ready to help.
+                delivering stable and efficient automation solutions.
               </p>
-              
-              
-              
-              
-              {/* <div class="about-buttons">
-                <a href="your-resume.pdf" class="btn">
+
+              <div className="about-buttons">
+                <a
+                  href="/Bhavin-Dalsaniya-QA-Automation-Testing.pdf"
+                  className="btn"
+                  download
+                >
                   Download Resume
                 </a>
-                <a href="https://github.com/yourgithub" class="btn">
-                  GitHub
+
+                <a
+                  href="/Bhavin-Dalsaniya-QA-Automation-Testing.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  View in Browser
                 </a>
-              </div> */}
-
-<div className="about-buttons">
-  <a href="/Bhavin  Dalsaniya - QA Automation Testing_4Y.pdf" className="btn" download>
-    Download Resume
-  </a>
-
-  <a
-    href="/Bhavin  Dalsaniya - QA Automation Testing_4Y.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn"
-  >
-    View in Browser
-  </a>
-</div>
-
-
-
-
+              </div>
             </div>
           </div>
         </div>
@@ -110,14 +94,14 @@ function Portfolio() {
       <section id="projects">
         <div className="container">
           <h2 className="section-title">My Projects</h2>
+
           <div className="project-grid">
             {/* Project Card 1 */}
             <div className="project-card">
               <div className="project-content">
                 <h3>Static Application Deployment</h3>
-                <p>Deployed a static website using Nginx on an EC2 instance.</p>
+                <p>Deployed a static website using Nginx on EC2.</p>
                 <div className="project-links">
-                  {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
                   <a
                     href="https://github.com/BhavinDalsaniya/static-app-aws/tree/main"
                     target="_blank"
@@ -135,11 +119,9 @@ function Portfolio() {
               <div className="project-content">
                 <h3>MySQL Application Deployment</h3>
                 <p>
-                  Deployed a dynamic application with a MySQL database on an EC2
-                  instance.
+                  Deployed a dynamic application with MySQL on an EC2 instance.
                 </p>
                 <div className="project-links">
-                  {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
                   <a
                     href="https://github.com/BhavinDalsaniya/spring-mysql-ec2-deployment"
                     target="_blank"
@@ -155,13 +137,11 @@ function Portfolio() {
             {/* Project Card 3 */}
             <div className="project-card">
               <div className="project-content">
-                <h3>Deploye DataBase App On EKS On AWS</h3>
+                <h3>Database App on AWS EKS</h3>
                 <p>
-                  Deployed an Application with a MySQL Database on AWS EKS using
-                  Docker
+                  Deployed an application with MySQL DB on AWS EKS using Docker.
                 </p>
                 <div className="project-links">
-                  {/* <a href="http://<ec2-public-ip>" target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a> */}
                   <a
                     href="https://github.com/BhavinDalsaniya/DeployeDataBaseAppOnEKSOnAWS"
                     target="_blank"
@@ -177,21 +157,23 @@ function Portfolio() {
         </div>
       </section>
 
-      {/* Contact Me Section */}
+      {/* Contact Section */}
       <section id="contact">
-        <div class="container">
+        <div className="container">
           <h2>Contact Me</h2>
           <p>Feel free to reach out to me:</p>
-          <div class="contact-info">
+
+          <div className="contact-info">
             <ul>
               <li>
-                <i class="fas fa-envelope"></i>{" "}
+                <i className="fas fa-envelope"></i>{" "}
                 <a href="mailto:dalsaniyabhavinshivlal@gmail.com">
                   dalsaniyabhavinshivlal@gmail.com
                 </a>
               </li>
+
               <li>
-                <i class="fab fa-linkedin"></i>{" "}
+                <i className="fab fa-linkedin"></i>{" "}
                 <a
                   href="https://www.linkedin.com/in/bhavin-dalsaniya-230b08337/"
                   target="_blank"
@@ -200,8 +182,9 @@ function Portfolio() {
                   LinkedIn
                 </a>
               </li>
+
               <li>
-                <i class="fab fa-github"></i>{" "}
+                <i className="fab fa-github"></i>{" "}
                 <a
                   href="https://github.com/your-username"
                   target="_blank"
@@ -216,7 +199,7 @@ function Portfolio() {
       </section>
 
       <footer>
-        <div class="container">
+        <div className="container">
           <p>&copy; 2025 Bhavin Dalsaniya. All rights reserved.</p>
         </div>
       </footer>
